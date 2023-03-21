@@ -1,0 +1,147 @@
+{
+  "cars": [
+    {
+      "marca": "Dacia Logan",
+      "img": "https://cdn.globalcarsbrands.com/wp-content/uploads/2018/06/2018-dacia-logan-review.jpg",
+      "sofer": "Catalin Constantinescu",
+      "motor": "1497 cm3",
+      "anul": "2013",
+      "norma_poluare": "Euro 5",
+      "putere": "75 cp",
+      "combustibil": "Motorina",
+      "tip_caroserie": "Sedan",
+      "numar_portiere": "4",
+      "culoare": "Maro",
+      "cutie_viteza": "Manuala",
+      "stare": "Second hand",
+      "id": 1
+    },
+    {
+      "marca": "Citron C-elysee",
+      "sofer": "Stefan Stanciu",
+      "motor": "1198 cm3",
+      "anul": "2016",
+      "norma_poluare": "Euro 6",
+      "putere": "82 cp",
+      "combustibil": "Benzina",
+      "img": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVkcjVlZzRiaW5iejEtQVVUT1ZJVFJPIiwidyI6W3siZm4iOiJxN216NTNiaWZwemstQVVUT1ZJVFJPIiwicyI6IjE2IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.eoszbtG7Pf0abtdeKZ7eVDj63tccQF_Ql0tTWWTAo2E/image;s=1080x720",
+      "tip_caroserie": "Sedan",
+      "numar_portiere": "4",
+      "culoare": "Albastra",
+      "cutie_viteza": "Manuala",
+      "stare": "Second hand",
+      "id": 2
+    },
+    {
+      "marca": "Fiat Tipo",
+      "img": "https://autoline.ro/img/s/automobil-sedan-FIAT-TIPO-1-4I-95-CP-GPL-MANUAL---1673981649173009623_big--23011720540641060000.jpg",
+      "sofer": "Nelu Pacalaru",
+      "motor": "1395 cm3",
+      "anul": "2019",
+      "norma_poluare": "Euro 6",
+      "putere": "95 cp",
+      "combustibil": "Benzina",
+      "tip_caroserie": "Sedan",
+      "numar_portiere": "4",
+      "culoare": "Alb",
+      "cutie_viteza": "Manuala",
+      "stare": "Second hand",
+      "id": 3
+    },
+    {
+      "marca": "Dacia Logan",
+      "img": "https://www.4tuning.ro/images/dacia-logan-2015/dacia-logan-2015-1066651106028accca-0-0-0-0-0.jpg",
+      "sofer": "Matei Dumitru",
+      "motor": "1198 cm3",
+      "anul": "2015",
+      "norma_poluare": "Euro 5",
+      "putere": "75 cp",
+      "combustibil": "Benzina",
+      "tip_caroserie": "Sedan",
+      "numar_portiere": "4",
+      "culoare": "Alb",
+      "cutie_viteza": "Manuala",
+      "stare": "Second hand",
+      "id": 4
+    },
+    {
+      "marca": "Citron C-elysee",
+      "sofer": "Nelu Pacalaru",
+      "motor": "1589 cm3",
+      "anul": "2019",
+      "norma_poluare": "Euro 6",
+      "putere": "115 cp",
+      "combustibil": "Benzina",
+      "img": "https://cloud.leparking.fr/2021/01/16/12/03/citroen-c-elysee-1-2-vti-selection-01-2018-24500-km-gris_7938754919.jpg",
+      "tip_caroserie": "Sedan",
+      "numar_portiere": "4",
+      "culoare": "Gri",
+      "cutie_viteza": "Manuala",
+      "stare": "Second hand",
+      "id": 5
+    }
+  ],
+  "info": [
+    {
+      "data": "2023-03-14",
+      "body": "Schimb ulei + filtre",
+      "id_car": "2",
+      "id": 18
+    },
+    {
+      "data": "2023-02-13",
+      "body": "Schimb placute frana",
+      "id_car": "2",
+      "id": 19
+    },
+    {
+      "data": "2023-01-17",
+      "body": "Schimb amartizoare",
+      "id_car": "2",
+      "id": 20
+    },
+    {
+      "data": "2023-03-14",
+      "body": "Schimb filtre + ulei",
+      "id_car": "1",
+      "id": 21
+    },
+    {
+      "data": "2023-03-22",
+      "body": "Schimb curea accesorii",
+      "id_car": "3",
+      "id": 22
+    },
+    {
+      "data": "2023-02-21",
+      "body": "Schimb placute de frane",
+      "id_car": "3",
+      "id": 23
+    },
+    {
+      "data": "2023-03-21",
+      "body": "Schimb ulei + filtre",
+      "id_car": "4",
+      "id": 24
+    },
+    {
+      "data": "2023-02-22",
+      "body": "Schimb ulei + filtre",
+      "id_car": "5",
+      "id": 25
+    },
+    {
+      "data": "2023-03-20",
+      "body": "Schimb furtun apa",
+      "id_car": "5",
+      "id": 26
+    }
+  ],
+  "users": [
+    {
+      "email": "sstanciu420@gmail.com",
+      "password": "$2a$10$ckaX9kN0cF2bGBbP7ufjDOa.GEC/ro0Y5/htP5Mjq0G2.hhhNFq4e",
+      "id": 1
+    }
+  ]
+}
