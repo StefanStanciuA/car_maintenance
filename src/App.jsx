@@ -8,6 +8,7 @@ import NewCar from './pages/NewCar'
 import EditCar from './pages/EditCar'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { AuthProvider } from './context/AuthContext'
 
 
 
@@ -17,21 +18,23 @@ function App() {
 
   return (
     <>
-      <Router>
-        <NavBar />
-        <div>
+      <AuthProvider>
+        <Router>
+          <NavBar />
+          <div>
 
-          <Routes>
-            <Route path='/' element={<Explore />} />
-            <Route path='/new-car' element={<NewCar />} />
-            <Route path='/edit-car/:id' element={<EditCar />} />
-            <Route path='/sign-in' element={<SignIn />} />
-            <Route path='/car-page/:id' element={<CarPage />} />
-          </Routes>
-        </div>
-        <Footer />
-      </Router>
-      <ToastContainer />
+            <Routes>
+              <Route path='/' element={<Explore />} />
+              <Route path='/new-car' element={<NewCar />} />
+              <Route path='/edit-car/:id' element={<EditCar />} />
+              <Route path='/sign-in' element={<SignIn />} />
+              <Route path='/car-page/:id' element={<CarPage />} />
+            </Routes>
+          </div>
+          <Footer />
+        </Router>
+        <ToastContainer />
+      </AuthProvider>
     </>
   )
 }

@@ -1,14 +1,16 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import axios from 'axios'
 import { toast } from "react-toastify"
 import visibilityIcon from '/assets/svg/visibilityIcon.svg'
 import { useNavigate } from "react-router-dom"
+import { AuthContext } from "../context/AuthContext"
 
 function SignIn() {
     const [formData, setFormatData] = useState({ email: '', password: '', })
     const [selected, setSelected] = useState(true)
     const [isError, setIsError] = useState(false)
     const navigate = useNavigate()
+    const { setSession } = useContext(AuthContext)
 
     const { email, password } = formData
 
@@ -22,6 +24,7 @@ function SignIn() {
                     password: password
                 })
                 localStorage.setItem('session', JSON.stringify(res.data))
+                setSession(res.data)
                 navigate('/')
             } else if (type === 'login') {
                 const res = await axios.post('http://localhost:8000/login', {
@@ -29,6 +32,7 @@ function SignIn() {
                     password: password
                 })
                 localStorage.setItem('session', JSON.stringify(res.data))
+                setSession(res.data)
                 navigate('/')
             }
             console.log(formData, type)

@@ -130,8 +130,13 @@ nav {
   text-decoration: none;
   margin: 0 20px;
   padding: 0;
+  cursor: pointer;
 }
 
+.logout-btn {
+  background-color: transparent;
+  border: 1px var(--second-color) solid;
+}
 
 
 /*SignIn component*/

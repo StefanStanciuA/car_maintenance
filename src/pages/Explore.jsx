@@ -1,18 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import ResultsCard from "../components/ResultsCard";
+import { AuthContext } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 function Explore() {
 
     const [cars, setCars] = useState(null)
-
-    const handleDelete = (id) => {
-        const newCars = cars.filter(car => car.id !== id)
-        setCars(newCars)
-    }
+    const { session } = useContext(AuthContext)
+    const navigate = useNavigate()
 
     useEffect(() => {
+
         async function getCarInformation() {
             try {
                 const res = await axios.get('http://localhost:8000/cars')
@@ -21,8 +21,12 @@ function Explore() {
                 toast.error('Something is wrong')
             }
         }
+        if (session) {
+            getCarInformation()
+        } else {
+            navigate('/sign-in')
+        }
 
-        getCarInformation()
     }, [])
     return (
         <div>
